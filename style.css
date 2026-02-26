@@ -166,6 +166,7 @@ hr {
     border: 1px solid rgba(30, 75, 140, 0.1);
     display: flex;
     flex-direction: column;
+    min-height: 350px; 
 }
 
 
@@ -361,3 +362,94 @@ footer nav a:hover {
 }
 
 
+.job-actions {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0 10px 0;
+    width: 100%;
+}
+
+.update-btn {
+    background-color: #0f4c81 !important;
+    color: white;
+    border: none;
+    padding: 6px 12px; 
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 0.85rem; 
+    cursor: pointer;
+    flex: 0.8;  
+    transition: all 0.3s ease;
+    height: 32px;  
+    line-height: 1.2;
+}
+
+.delete-btn {
+    background-color: #dc3545 !important;
+    color: white;
+    border: none;
+    padding: 6px 12px;  
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 0.85rem;  
+    cursor: pointer;
+    flex: 0.8; 
+    transition: all 0.3s ease;
+    height: 32px;  
+    line-height: 1.2;
+}
+
+#jobs article a {
+    display: inline-block;
+    background: #1e4b8c;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;  
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.update-btn:hover {
+    background-color: #0a3a5e !important;
+    transform: translateY(-2px);
+}
+
+.delete-btn:hover {
+    background-color: #b02a37 !important;
+    transform: translateY(-2px);
+}
+
+#jobs article a:hover {
+    background: #153b6b;
+    transform: translateY(-2px);
+}
+
+#jobs article {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;  
+}
+
+@media (max-width: 768px) {
+    .job-actions {
+        flex-direction: row; 
+        gap: 8px;
+    }
+    
+    .update-btn, .delete-btn {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+        height: 28px;
+    }
+    
+    #jobs article a {
+        padding: 6px 12px;
+        font-size: 0.85rem;
+    }
+}
